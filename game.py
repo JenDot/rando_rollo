@@ -44,7 +44,7 @@ def drawing(*args):
     print("The winner is ...")
     time.sleep(0.5)
     winner = random.choice(PEOPLE)
-    PEOPLE.pop(winner)      # Remove the winner from the list because (s)he can only win once per month.
+    PEOPLE.pop(PEOPLE.index(winner))      # Remove the winner from the list because (s)he can only win once per month.
     return print(f"{winner}!")
 
 """Put all of the parts together!"""
