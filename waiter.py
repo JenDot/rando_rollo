@@ -1,6 +1,10 @@
+"""A module to handle time.sleep() for reuse."""
+import time, os
+
 def waiter(*args):
-    for region in regions:
-        print(region)
+    for arg in args:
+        print(arg)
         time.sleep(0.20)
-        os.system('clear')
+        # os.system('clear')
         time.sleep(0.2)
+    return
