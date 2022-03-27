@@ -5,13 +5,11 @@ import random
 import os
 import time
 
-# Set global variables
+"""Set global variables"""
 staff_names = []
 waiter = time.sleep(3.0)
 
-# Define mechanism to select regional staff for final drawing.
-
-
+"""Define mechanism to select regional staff for final drawing."""
 def random_region(*args):
     regions = ["East Bay", "Peninsula", "San Francisco", "South Bay"]
 
@@ -24,14 +22,10 @@ def random_region(*args):
     print("The winning region is ...")
     time.sleep(0.5)
     return print(f"{random.choice(regions)}!")
-
-
 random_region()
 
-# Define ultimate drawing to select 2 winners:
-# Tool will request staff names from input()  and then roll twice with a short pause in between, to select staff people to win the month's drawing.
-
-
+"""Define ultimate drawing to select 2 winners:
+Tool will request staff names from input()  and then roll twice with a short pause in between, to select staff people to win the month's drawing."""
 def get_staff_names():
     staff_names_full = FALSE
     # Set rule to keep asking for staff names until user says list is full.
@@ -44,3 +38,4 @@ def get_staff_names():
         if staff_full_question.lower == "n":
             staff_names_full = TRUE
     return random.choice(staff_names)
+get_staff_names()
