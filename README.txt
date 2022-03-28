@@ -1,0 +1,1 @@
+A quick Python-based raffle game utilizing Pygame.
