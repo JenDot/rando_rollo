@@ -24,12 +24,14 @@ def get_people():
     people_full = FALSE
     print("Now let's enter staff names.")
     time.sleep(2.0)
+
     # Set rule to keep asking for staff names until user says list is full.
     while people_full == FALSE:
         PEOPLE.append(input("Enter staff person's name:  "))
         print(f"Staff people entered: {PEOPLE}.")
         people_full_question = input(
             "Enter another staff person?  (Enter y or n.)  ")
+            
         # Change 'people_full_question' to TRUE if the user answers 'n' to 'people_full_question'.
         if people_full_question == "n":
             # people_full = TRUE
